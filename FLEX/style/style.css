@@ -1,0 +1,183 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    /* background-color: rgb(243, 240, 237);*/
+    text-decoration: none;
+    list-style: none;
+    color: rgb(245, 241, 241);
+    width: auto;
+
+}
+
+
+header {
+
+    display: flex;
+    width: 100%;
+    height: 120px;
+    justify-content: center;
+    box-shadow: 2px solid black;
+    background-color: rgb(86, 31, 31);
+}
+
+.left {
+    height: 100px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 40%;
+
+}
+
+.middle ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.middle ul li a {
+    color: rgb(249, 246, 246);
+    transition: 3sec;
+    font-size: medium;
+}
+
+.middle ul li a:hover {
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 3px;
+}
+
+
+.right {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 25%;
+
+}
+
+.search {
+    display: flex;
+    gap:30px;
+    margin-left: 80px;
+    margin-top: 30px;
+
+
+
+}
+
+.search input {
+    display: flex;
+    height: 30px;
+    border-color: rgb(9, 2, 7);
+    border-style: ridge;
+    margin-top: 10px;
+}
+
+
+.teacher {
+    display: flex;
+    text-align: center;
+    background-color: rgb(249, 245, 246);
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+}
+
+.right i {
+
+    color: rgb(246, 246, 249);
+    height: 100px;
+    width: 100%;
+    display: none;
+    margin-top: 90px;
+    margin-left: 40px;
+}
+.search button{
+    width: 80px;
+    height: 50px;
+    color: black;
+    border-radius: 20px;
+    background-color:antiquewhite;
+
+}
+
+
+@media (min-width:200px) and (max-width:768px) {
+    header{
+        background-color: rgb(13, 13, 13);
+    }
+    
+    .right i{
+        color: rgb(249, 244, 244);
+    display:block;
+    font-size: 30px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 20px;
+ }
+    
+    .middle ul{
+        display: none;
+    }
+    
+    .search input{
+      display: none;
+    } 
+    .search button{
+        display: none;
+    }  
+ }
+
+       @media (min-width:768px) and (max-width:992px) {
+    header{
+        background-color: rgb(213, 17, 17);
+    }
+    .search button{
+        display: none;
+    }  
+    
+    .right i{
+        color: rgb(249, 244, 244);
+    display:block;
+    font-size: 30px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 20px;
+ }
+    
+    .middle ul{
+        display: none;
+    }
+    
+    .search input{
+      display: none;
+    }
+        } 
+    
+    
